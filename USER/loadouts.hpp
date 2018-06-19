@@ -18,7 +18,7 @@
 */
 
 
-loadoutFactionBlu = " Israel Defense Forces";
+loadoutFactionBlu = "IsraeliDefenseForce";
 loadoutFactionOpf = "";
 loadoutFactionInd = "";
 
