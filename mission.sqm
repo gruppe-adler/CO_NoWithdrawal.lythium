@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=306;
+		nextID=330;
 	};
 	class Camera
 	{
-		pos[]={2618.5793,494.51596,15968.185};
-		dir[]={-0.037941352,-0.93314731,-0.35756406};
-		up[]={-0.098468475,0.35939458,-0.92797184};
-		aside[]={-0.99444658,5.9730155e-007,0.10552312};
+		pos[]={5612.2607,330.94019,13492.176};
+		dir[]={-0.60388947,-0.47424781,0.64063382};
+		up[]={-0.32530111,0.88039094,0.3450945};
+		aside[]={0.7276687,1.8742867e-008,0.68593204};
 	};
 };
 binarizationWanted=0;
@@ -7730,7 +7730,8 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{player addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""\data\flag.paa"";}];}";
+				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""\data\flag.paa"";}];}";
+				name="flag_1";
 			};
 			id=2396;
 			type="lop_Flag_Iraq_F";
@@ -30005,6 +30006,7 @@ class Mission
 			};
 			id=3075;
 			type="Box_NATO_Grenades_F";
+			atlOffset=-0.00012207031;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30311,6 +30313,7 @@ class Mission
 			};
 			id=3095;
 			type="Box_NATO_Grenades_F";
+			atlOffset=-0.00015258789;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30351,7 +30354,7 @@ class Mission
 			};
 			id=3097;
 			type="Box_NATO_Grenades_F";
-			atlOffset=3.0517578e-005;
+			atlOffset=-0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
