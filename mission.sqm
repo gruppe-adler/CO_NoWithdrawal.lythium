@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=346;
+		nextID=386;
 	};
 	class Camera
 	{
-		pos[]={2625.345,504.0975,15977.327};
-		dir[]={0.024195634,-0.85077459,-0.52502257};
-		up[]={0.039174508,0.52520585,-0.85006726};
-		aside[]={-0.99896264,2.5449481e-008,-0.046036519};
+		pos[]={5636.3301,345.86746,13512.151};
+		dir[]={-0.85814208,-0.50972837,-0.061530098};
+		up[]={-0.50843036,0.86033165,-0.036455225};
+		aside[]={-0.071519032,-4.0925261e-007,0.99744892};
 	};
 };
 binarizationWanted=0;
@@ -7730,7 +7730,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""\data\flag.paa"";}];}";
+				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""\data\flag.jpg"";}];}";
 				name="flag_1";
 			};
 			id=2396;
@@ -29938,14 +29938,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2618.2605,464.86163,15965.45};
-				angles[]={6.255301,0,0.032287095};
+				position[]={2618.2603,464.86163,15965.45};
+				angles[]={6.2552948,0,0.032288592};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, true, [0, 3, 1], 10] call ace_dragging_fnc_setCarryable;" \n "" \n "if (isServer) then { " \n "cargoForThis = ""Supply500"" createVehicle [0,0,0]; " \n "cargoForThis attachTo [this, [0,0,0.85]];" \n "this addItemCargoGlobal [""ACE_elasticBandage"", 5];  " \n "this addItemCargoGlobal [""ACE_packingBandage"", 5];   " \n "this addItemCargoGlobal [""ACE_quikclot"", 5]; " \n "this addItemCargoGlobal [""ACE_tourniquet"", 4];   " \n "this addItemCargoGlobal [""ACE_morphine"", 2];   " \n "this addItemCargoGlobal [""ACE_epinephrine"", 2];   " \n "  " \n "};}";
+				init="call{[this, true, [0, 3, 1], 10] call ace_dragging_fnc_setCarryable;" \n "" \n "if (isServer) then { " \n "cargoForThis = ""Supply500"" createVehicle [0,0,0]; " \n "cargoForThis attachTo [this, [0,0,0.85]];" \n "cargoForThis addItemCargoGlobal [""ACE_elasticBandage"", 5];  " \n "cargoForThis addItemCargoGlobal [""ACE_packingBandage"", 5];   " \n "cargoForThis addItemCargoGlobal [""ACE_quikclot"", 5]; " \n "cargoForThis addItemCargoGlobal [""ACE_tourniquet"", 4];   " \n "cargoForThis addItemCargoGlobal [""ACE_morphine"", 2];   " \n "cargoForThis addItemCargoGlobal [""ACE_epinephrine"", 2];   " \n "  " \n "};}";
 			};
 			id=3070;
 			type="Land_FirstAidKit_01_closed_F";
@@ -29966,6 +29966,7 @@ class Mission
 			};
 			id=3074;
 			type="Box_NATO_Ammo_F";
+			atlOffset=-0.00015258789;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30383,18 +30384,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2603.0513,464.63049,15955.982};
-				angles[]={6.2811427,0,6.282495};
+				position[]={2603.0513,464.63019,15955.982};
+				angles[]={6.2811432,0,6.2824869};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_4] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3102;
 			type="Box_NATO_Ammo_F";
-			atlOffset=0.00030517578;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30424,14 +30424,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2601.4707,464.63135,15956.014};
-				angles[]={6.2811427,0,6.282495};
+				position[]={2601.4702,464.63135,15956.014};
+				angles[]={6.2811432,0,6.2824869};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this additemCargoGlobal [""tf_anprc152"", 20];  " \n "this addBackpackCargoGlobal [""TFAR_rt1523g_sage"", 3];   " \n "this addBackpackCargoGlobal [""RHS_M2_Gun_Bag"", 2]; " \n "this addBackpackCargoGlobal [""RHS_M2_MiniTripod_Bag"", 2];" \n "this additemCargoGlobal [""ACE_EntrenchingTool"", 20];  " \n " " \n "};}";
+				init="call{if (isServer) then {  " \n "this additemCargoGlobal [""tf_anprc152"", 20];  " \n "this addBackpackCargoGlobal [""TFAR_rt1523g_sage"", 3];   " \n "this addBackpackCargoGlobal [""RHS_M2_Gun_Bag"", 2]; " \n "this addBackpackCargoGlobal [""RHS_M2_MiniTripod_Bag"", 2];" \n "this additemCargoGlobal [""ACE_EntrenchingTool"", 20];  " \n " " \n "};" \n "" \n "[this, vic_4] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3103;
 			type="Box_NATO_Support_F";
@@ -30464,18 +30464,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2586.6858,464.69501,15956.279};
-				angles[]={6.2744575,0,6.2775435};
+				position[]={2586.6858,464.69424,15956.279};
+				angles[]={6.2744584,0,6.2775478};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_7] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3109;
 			type="Box_NATO_Ammo_F";
-			atlOffset=0.00076293945;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30505,18 +30504,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2585.1772,464.70419,15956.357};
-				angles[]={6.2744575,0,6.2775435};
+				position[]={2585.1777,464.70343,15956.357};
+				angles[]={6.2744584,0,6.2775478};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "};}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "};" \n "" \n "[this, vic_7] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3110;
 			type="Box_NATO_Grenades_F";
-			atlOffset=0.00073242188;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30546,18 +30544,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2579.9939,464.71692,15956.371};
-				angles[]={6.2692289,0,6.2362351};
+				position[]={2579.9934,464.71649,15956.371};
+				angles[]={6.2692227,0,6.2362361};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_8] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3111;
 			type="Box_NATO_Ammo_F";
-			atlOffset=0.0024719238;
+			atlOffset=0.0020141602;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30587,18 +30585,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2578.4854,464.77817,15956.449};
-				angles[]={6.2692289,0,6.2362351};
+				position[]={2578.4854,464.77844,15956.449};
+				angles[]={6.2692227,0,6.2362361};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "};}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "};" \n "" \n "[this, vic_8] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3112;
 			type="Box_NATO_Grenades_F";
-			atlOffset=-0.0082702637;
+			atlOffset=-0.0079956055;
 			class CustomAttributes
 			{
 				class Attribute0
