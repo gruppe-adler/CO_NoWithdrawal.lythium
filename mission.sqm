@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=386;
+		nextID=394;
 	};
 	class Camera
 	{
-		pos[]={5636.3301,345.86746,13512.151};
-		dir[]={-0.85814208,-0.50972837,-0.061530098};
-		up[]={-0.50843036,0.86033165,-0.036455225};
-		aside[]={-0.071519032,-4.0925261e-007,0.99744892};
+		pos[]={2650.7139,496.31534,15947.268};
+		dir[]={-0.30348578,-0.89815193,0.31827277};
+		up[]={-0.61985052,0.43957657,0.65005147};
+		aside[]={0.72375315,-2.0358129e-007,0.69012737};
 	};
 };
 binarizationWanted=0;
@@ -29945,7 +29945,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, true, [0, 3, 1], 10] call ace_dragging_fnc_setCarryable;" \n "" \n "if (isServer) then { " \n "cargoForThis = ""Supply500"" createVehicle [0,0,0]; " \n "cargoForThis attachTo [this, [0,0,0.85]];" \n "cargoForThis addItemCargoGlobal [""ACE_elasticBandage"", 5];  " \n "cargoForThis addItemCargoGlobal [""ACE_packingBandage"", 5];   " \n "cargoForThis addItemCargoGlobal [""ACE_quikclot"", 5]; " \n "cargoForThis addItemCargoGlobal [""ACE_tourniquet"", 4];   " \n "cargoForThis addItemCargoGlobal [""ACE_morphine"", 2];   " \n "cargoForThis addItemCargoGlobal [""ACE_epinephrine"", 2];   " \n "  " \n "};}";
+				init="call{[this, true, [0, 3, 1], 10] call ace_dragging_fnc_setCarryable;" \n "[this, 1] call ace_cargo_fnc_setSize;" \n "if (isServer) then { " \n "cargoForThis = ""Supply500"" createVehicle [0,0,0]; " \n "cargoForThis attachTo [this, [0,0,0.85]];" \n "cargoForThis addItemCargoGlobal [""ACE_elasticBandage"", 5];  " \n "cargoForThis addItemCargoGlobal [""ACE_packingBandage"", 5];   " \n "cargoForThis addItemCargoGlobal [""ACE_quikclot"", 5]; " \n "cargoForThis addItemCargoGlobal [""ACE_tourniquet"", 4];   " \n "cargoForThis addItemCargoGlobal [""ACE_morphine"", 2];   " \n "cargoForThis addItemCargoGlobal [""ACE_epinephrine"", 2];   " \n "  " \n "};}";
 			};
 			id=3070;
 			type="Land_FirstAidKit_01_closed_F";
