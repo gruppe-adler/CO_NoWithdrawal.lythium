@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=450;
+		nextID=466;
 	};
 	class Camera
 	{
-		pos[]={2643.9148,472.65793,15953.173};
-		dir[]={-0.8252852,-0.37999198,-0.41795221};
-		up[]={-0.33903134,0.92498338,-0.17169721};
-		aside[]={-0.45184332,-3.062305e-007,0.8922075};
+		pos[]={5574.9282,349.76932,13741.098};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -5038,7 +5038,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2621.364,466.41428,15954.73};
+				position[]={2621.9661,466.44257,15954.04};
 				angles[]={6.2388887,3.146724,0.0842994};
 			};
 			side="Empty";
@@ -5050,7 +5050,6 @@ class Mission
 			};
 			id=1634;
 			type="rhsusf_m998_d_2dr_fulltop";
-			atlOffset=-0.0079956055;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5129,7 +5128,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				class Attribute4
+				{
+					property="ace_cargo_space";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=100;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item10
@@ -7765,7 +7783,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) forceFlagTexture ""data\flag.jpg"";}];}";
 				name="flag_1";
 			};
 			id=2396;
@@ -9409,13 +9427,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5574.9282,328.74612,13766.098};
-				angles[]={0,4.8038073,0};
+				angles[]={0,4.8038096,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				init="call{flag_6 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				name="flag_6";
 			};
 			id=2437;
 			type="lop_Flag_Iraq_F";
@@ -17339,14 +17358,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5569.1304,323.00964,13640.673};
-				angles[]={0,4.8038073,0};
+				position[]={5569.1299,323.00964,13640.673};
+				angles[]={0,4.8038096,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				init="call{flag_3 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				name="flag_3";
 			};
 			id=2693;
 			type="lop_Flag_Iraq_F";
@@ -21837,7 +21857,8 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				init="call{flag_2 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				name="flag_2";
 			};
 			id=2812;
 			type="lop_Flag_Iraq_F";
@@ -23213,18 +23234,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5561.5332,326.65512,13688.313};
-				angles[]={0,4.8038073,0};
+				position[]={5561.5332,326.65527,13688.313};
+				angles[]={0,4.8038096,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				init="call{flag_4 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				name="flag_4";
 			};
 			id=2872;
 			type="lop_Flag_Iraq_F";
-			atlOffset=-0.00015258789;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24881,18 +24902,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5934.583,326.21512,13839.13};
-				angles[]={0,4.8038073,0};
+				position[]={5934.583,326.21548,13839.13};
+				angles[]={0,4.8038096,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				init="call{flag_1 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				init="call{flag_5 addAction [""<t color='#FF0000'>Take position back for the motherland</t>"", {(_this select 0) setFlagTexture ""data\flag.jpg"";}];}";
+				name="flag_5";
 			};
 			id=2906;
 			type="lop_Flag_Iraq_F";
-			atlOffset=0.0016784668;
+			atlOffset=0.0020446777;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29915,14 +29937,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2622.2534,464.99921,15959.077};
-				angles[]={6.2553334,0,0.067931563};
+				position[]={2622.2537,464.99921,15959.077};
+				angles[]={6.2553296,0,0.06792821};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_1] call ace_cargo_fnc_loadItem;}";
+				init="call{[this, vic_] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3052;
 			type="ACE_Box_82mm_Mo_Combo";
@@ -30233,18 +30255,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2620.5452,464.88654,15958.957};
-				angles[]={6.2388878,0,0.084302641};
+				position[]={2620.5452,464.88702,15958.957};
+				angles[]={6.2388887,0,0.0842994};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_1] call ace_cargo_fnc_loadItem;}";
+				init="call{[this, vic_] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3081;
 			type="ACE_Box_82mm_Mo_Combo";
-			atlOffset=0.014526367;
+			atlOffset=0.015014648;
 		};
 		class Item519
 		{
@@ -31815,7 +31837,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, true, [0, 3, 1], 10] call ace_dragging_fnc_setCarryable;" \n "[this, 0.1] call ace_cargo_fnc_setSize;" \n "if (isServer) then { " \n "cargoForThis = ""Supply500"" createVehicle [0,0,0]; " \n "cargoForThis attachTo [this, [0,0,0.85]];" \n "cargoForThis addItemCargoGlobal [""ACE_elasticBandage"", 5];  " \n "cargoForThis addItemCargoGlobal [""ACE_packingBandage"", 5];   " \n "cargoForThis addItemCargoGlobal [""ACE_quikclot"", 5]; " \n "cargoForThis addItemCargoGlobal [""ACE_tourniquet"", 4];   " \n "cargoForThis addItemCargoGlobal [""ACE_morphine"", 2];   " \n "cargoForThis addItemCargoGlobal [""ACE_epinephrine"", 2];   " \n "  " \n "};" \n "" \n "[this, vic_1] call ace_cargo_fnc_loadItem;}";
+				init="call{[this, true, [0, 3, 1], 10] call ace_dragging_fnc_setCarryable;" \n "[this, 1] call ace_cargo_fnc_setSize;" \n "if (isServer) then { " \n "cargoForThis = ""Supply500"" createVehicle [0,0,0]; " \n "cargoForThis attachTo [this, [0,0,0.85]];" \n "cargoForThis addItemCargoGlobal [""ACE_elasticBandage"", 5];  " \n "cargoForThis addItemCargoGlobal [""ACE_packingBandage"", 5];   " \n "cargoForThis addItemCargoGlobal [""ACE_quikclot"", 5]; " \n "cargoForThis addItemCargoGlobal [""ACE_tourniquet"", 4];   " \n "cargoForThis addItemCargoGlobal [""ACE_morphine"", 2];   " \n "cargoForThis addItemCargoGlobal [""ACE_epinephrine"", 2];   " \n "[this, vic_1, true] call ace_cargo_fnc_loadItem;  " \n "};" \n "" \n "}";
 			};
 			id=3236;
 			type="Land_FirstAidKit_01_closed_F";
