@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=442;
+		nextID=450;
 	};
 	class Camera
 	{
-		pos[]={2608.7256,464.81689,15905.736};
-		dir[]={-0.27887473,-0.11646608,0.95328367};
-		up[]={-0.032711107,0.99318475,0.11181933};
-		aside[]={0.95981139,-6.1449828e-007,0.28078252};
+		pos[]={2595.5886,469.21677,15912.082};
+		dir[]={0.90334678,-0.054997951,0.4255538};
+		up[]={0.049804915,0.99849176,0.023461757};
+		aside[]={0.42620277,-7.79939e-007,-0.90472567};
 	};
 };
 binarizationWanted=0;
@@ -31826,16 +31826,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2607.3979,464.23093,15909.105};
+				position[]={2599.0811,468.84738,15912.483};
+				angles[]={0,1.5331348,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=3258;
 			type="Land_WallSign_01_F";
-			atlOffset=3.0517578e-005;
+			atlOffset=0.934021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31853,7 +31853,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="data\pptx.jpg";
+							value="data\pptx4.jpg";
 						};
 					};
 				};
