@@ -21,7 +21,7 @@
 
 //SHORTRANGE KANÄLE ============================================================
 class shortrange {
-    class Command_Internal {
+    class Lion_Internal {
         freq = 50;
     };
 
@@ -37,15 +37,15 @@ class shortrange {
         freq = 80;
     };
 
-    class Medic {
+    class Delta_Internal {
         freq = 90;
     };
 
-    class Mortar {
+    class Echo_Internal {
         freq = 100;
     };
 
-    class AT {
+    class Foxtrot_Internal {
         freq = 110;
     };
 };
@@ -53,7 +53,7 @@ class shortrange {
 
 //LONGRANGE KANÄLE =============================================================
 class longrange {
-    class Command {
+    class Lion {
         freq = 32;
     };
 

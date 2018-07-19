@@ -34,11 +34,11 @@
 
     class BLUFOR {
         class group1 {
-            groupName = "Command";
+            groupName = "Lion";
 
             class shortrange {
                 defaultChannel = 1;
-                channel1 = "Command_Internal";
+                channel1 = "Lion_Internal";
             };
 
             class longrange {
@@ -46,7 +46,7 @@
                 altChannel = 2;
                 altChannelOnlyTL = 1;
 
-                channel1 = "Command";
+                channel1 = "Lion";
                 channel2 = "Mortar_AT";
             };
         };
@@ -61,7 +61,7 @@
             class longrange {
                 defaultChannel = 1;
 
-                channel1 = "Command";
+                channel1 = "Lion";
             };
         };
 		class group3 {
@@ -75,7 +75,7 @@
             class longrange {
                 defaultChannel = 1;
 
-                channel1 = "Command";
+                channel1 = "Lion";
             };
         };
 		class group4 {
@@ -89,29 +89,29 @@
             class longrange {
                 defaultChannel = 1;
 
-                channel1 = "Command";
+                channel1 = "Lion";
             };
         };
 		class group5 {
-            groupName = "Medic";
+            groupName = "Delta";
 
             class shortrange {
                 defaultChannel = 5;
-                channel3 = "Medic_Internal";
+                channel3 = "Delta_Internal";
             };
 
             class longrange {
                 defaultChannel = 1;
 
-                channel1 = "Command";
+                channel1 = "Mortar_AT";
             };
         };
 		class group6 {
-            groupName = "Mortar";
+            groupName = "Echo";
 
             class shortrange {
                 defaultChannel = 6;
-                channel3 = "Mortar_Internal";
+                channel3 = "Echo_Internal";
             };
 
             class longrange {
@@ -121,17 +121,17 @@
             };
         };
 		class group7 {
-            groupName = "AT";
+            groupName = "Foxtrot";
 
             class shortrange {
                 defaultChannel = 7;
-                channel3 = "AT_Internal";
+                channel3 = "Foxtrot_Internal";
             };
 
             class longrange {
                 defaultChannel = 2;
 
-                channel1 = "Mortar_AT";
+                channel1 = "Lion";
             };
         };
     };
