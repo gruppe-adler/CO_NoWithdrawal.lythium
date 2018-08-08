@@ -8,22 +8,22 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3431;
+		nextID=3432;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=18;
 	};
 	class LayerIndexProvider
 	{
-		nextID=506;
+		nextID=514;
 	};
 	class Camera
 	{
-		pos[]={2594.1143,465.39404,15916.632};
-		dir[]={-0.16003582,-0.84091908,0.51719368};
-		up[]={-0.2485669,0.54121268,0.80330795};
-		aside[]={0.95542711,5.0882809e-006,0.29563212};
+		pos[]={2625.2581,497.29013,15869.704};
+		dir[]={-0.18739186,-0.43228009,0.88219291};
+		up[]={-0.089830503,0.90170771,0.42290819};
+		aside[]={0.97829145,6.7218207e-007,0.20779626};
 	};
 };
 binarizationWanted=0;
@@ -3451,7 +3451,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=577;
+		items=578;
 		class Item0
 		{
 			dataType="Layer";
@@ -33708,7 +33708,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2590.3311,465.29233,15915.53};
-				angles[]={-0,2.2541976,0};
+				angles[]={0,2.2541976,0};
 			};
 			side="Empty";
 			flags=4;
@@ -33769,7 +33769,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2592.9915,465.54013,15915.488};
-				angles[]={-0,5.8448458,0};
+				angles[]={0,5.8448458,0};
 			};
 			side="Empty";
 			flags=4;
@@ -33890,7 +33890,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2590.2581,464.62442,15913.794};
-				angles[]={-0,0.805309,0};
+				angles[]={0,0.805309,0};
 			};
 			side="Empty";
 			flags=4;
@@ -33941,6 +33941,21 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item577
+		{
+			dataType="Marker";
+			position[]={5578.3979,317.77701,13642.79};
+			name="marker_17";
+			text="Grenzposten 126";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorWEST";
+			a=25;
+			b=175;
+			angle=348.92096;
+			id=3431;
+			atlOffset=-0.00021362305;
 		};
 	};
 	class Connections
