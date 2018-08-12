@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=538;
+		nextID=546;
 	};
 	class Camera
 	{
-		pos[]={5571.8584,335.26022,13660.762};
-		dir[]={-0.97867399,-0.19212662,0.073063664};
-		up[]={-0.19161797,0.98136139,0.014305362};
-		aside[]={0.074449763,1.8106221e-007,0.99724764};
+		pos[]={2624.4946,474.84219,15941.018};
+		dir[]={0.36932284,-0.92674887,-0.068964012};
+		up[]={0.91100305,0.37568384,-0.17011264};
+		aside[]={-0.18356022,1.2332748e-008,-0.98301876};
 	};
 };
 binarizationWanted=0;
@@ -28520,14 +28520,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.032,464.59671,15941.494};
+				position[]={2629.4731,464.62799,15941.408};
 				angles[]={6.2132502,0,0.0842994};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n " [this, vic_2] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n "[this, vic_2] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3075;
 			type="Box_NATO_Grenades_F";
@@ -28840,7 +28840,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n "[this, vic_2] call ace_cargo_fnc_loadItem; " \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n "[this, vic_2] call ace_cargo_fnc_loadItem; " \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "}";
 			};
 			id=3097;
 			type="Box_NATO_Grenades_F";
