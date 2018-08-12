@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=530;
+		nextID=538;
 	};
 	class Camera
 	{
-		pos[]={5585.7344,318.47046,13657.283};
-		dir[]={-0.26430732,-0.27690512,-0.92388272};
-		up[]={-0.076178402,0.96087825,-0.26627851};
-		aside[]={-0.96147609,-1.5163605e-006,0.27506676};
+		pos[]={5571.8584,335.26022,13660.762};
+		dir[]={-0.97867399,-0.19212662,0.073063664};
+		up[]={-0.19161797,0.98136139,0.014305362};
+		aside[]={0.074449763,1.8106221e-007,0.99724764};
 	};
 };
 binarizationWanted=0;
@@ -7058,17 +7058,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5604.9819,319.68164,13509.486};
-				angles[]={0,1.3818835,0};
+				position[]={5604.9819,319.68161,13509.486};
+				angles[]={0,1.381882,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
-				disableSimulation=1;
 			};
 			id=2395;
 			type="Land_BarGate_01_open_F";
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7086,7 +7086,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -19007,7 +19007,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5592.1646,318.31815,13598.727};
+				position[]={5592.0693,318.3132,13599.243};
 				angles[]={0.026991336,3.0046389,6.1884718};
 			};
 			side="Empty";
@@ -19018,7 +19018,6 @@ class Mission
 			};
 			id=2769;
 			type="Fortress2";
-			atlOffset=6.1035156e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28421,31 +28420,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.9399,465.2926,15950.835};
-				angles[]={6.2553334,0,0.067931563};
+				position[]={2629.9397,465.29254,15950.835};
+				angles[]={6.2553296,0,0.06792821};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_1] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {[this, vic_1] call ace_cargo_fnc_loadItem;};}";
 			};
 			id=3052;
 			type="ACE_Box_82mm_Mo_Combo";
+			atlOffset=-3.0517578e-005;
 		};
 		class Item472
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.5154,463.96384,15934.157};
-				angles[]={6.2321048,0,0.052764226};
+				position[]={2629.5149,463.96384,15934.157};
+				angles[]={6.2320995,0,0.052761301};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_3] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then { [this, vic_3] call ace_cargo_fnc_loadItem;};}";
 			};
 			id=3056;
 			type="ACE_medicalSupplyCrate_advanced";
@@ -28520,18 +28520,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.0322,464.59589,15941.494};
-				angles[]={6.2132559,0,0.084303349};
+				position[]={2629.032,464.59671,15941.494};
+				angles[]={6.2132502,0,0.0842994};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n " " \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n " [this, vic_2] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3075;
 			type="Box_NATO_Grenades_F";
-			atlOffset=-0.00082397461;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28549,7 +28548,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -28602,14 +28601,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.8623,463.89774,15932.506};
-				angles[]={6.2321048,0,0.052764226};
+				position[]={2629.8621,463.89771,15932.506};
+				angles[]={6.2320995,0,0.052761301};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_3] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then { [this, vic_3] call ace_cargo_fnc_loadItem;};}";
 			};
 			id=3077;
 			type="ACE_medicalSupplyCrate_advanced";
@@ -28643,17 +28642,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.4504,463.92377,15933.44};
-				angles[]={6.2321048,0,0.052764226};
+				position[]={2629.45,463.92377,15933.44};
+				angles[]={6.2320995,0,0.052761301};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_3] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then { [this, vic_3] call ace_cargo_fnc_loadItem;};}";
 			};
 			id=3078;
 			type="ACE_medicalSupplyCrate_advanced";
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28683,17 +28683,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.803,463.85208,15931.675};
-				angles[]={6.2321048,0,0.052764226};
+				position[]={2629.803,463.85211,15931.675};
+				angles[]={6.2320995,0,0.052761301};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_3] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then { [this, vic_3] call ace_cargo_fnc_loadItem;};}";
 			};
 			id=3079;
 			type="ACE_medicalSupplyCrate_advanced";
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28723,18 +28724,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2630.1421,465.15271,15948.163};
-				angles[]={6.2132564,0,0.054901086};
+				position[]={2630.1423,465.15286,15948.163};
+				angles[]={6.2132502,0,0.054908056};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, vic_1] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {[this, vic_1] call ace_cargo_fnc_loadItem;};}";
 			};
 			id=3081;
 			type="ACE_Box_82mm_Mo_Combo";
-			atlOffset=-0.00012207031;
 		};
 		class Item480
 		{
@@ -28833,18 +28833,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.4868,464.50845,15939.274};
-				angles[]={6.2321048,0,0.052764226};
+				position[]={2629.4871,464.50882,15939.274};
+				angles[]={6.2320995,0,0.052761301};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n " " \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n " " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 10];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 10];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 10]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 10];   " \n "[this, vic_2] call ace_cargo_fnc_loadItem; " \n "};" \n "" \n "[this, vic_2] call ace_cargo_fnc_loadItem;}";
 			};
 			id=3097;
 			type="Box_NATO_Grenades_F";
-			atlOffset=-0.00033569336;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28862,7 +28862,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -28931,14 +28931,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2631.1001,464.01401,15913.728};
-				angles[]={6.2826972,0,6.279264};
+				position[]={2631.1003,464.01401,15913.728};
+				angles[]={6.2826962,0,6.2792583};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this additemCargoGlobal [""tf_anprc152"", 20];  " \n "this addBackpackCargoGlobal [""TFAR_rt1523g_sage"", 3];   " \n "this addBackpackCargoGlobal [""RHS_M2_Gun_Bag"", 2]; " \n "this addBackpackCargoGlobal [""RHS_M2_MiniTripod_Bag"", 2];" \n "this additemCargoGlobal [""ACE_EntrenchingTool"", 20]; " \n "this additemCargoGlobal [""ToolKit"", 2]; " \n " " \n "};" \n "[this, vic_4] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this additemCargoGlobal [""tf_anprc152"", 20];  " \n "this addBackpackCargoGlobal [""TFAR_rt1523g_sage"", 3];   " \n "this addBackpackCargoGlobal [""RHS_M2_Gun_Bag"", 2]; " \n "this addBackpackCargoGlobal [""RHS_M2_MiniTripod_Bag"", 2];" \n "this additemCargoGlobal [""ACE_EntrenchingTool"", 20]; " \n "this additemCargoGlobal [""ToolKit"", 2]; " \n "[this, vic_4] call ace_cargo_fnc_loadItem; " \n "};" \n "}";
 			};
 			id=3103;
 			type="Box_NATO_Support_F";
@@ -28959,7 +28959,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -28971,18 +28971,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2630.1326,464.02963,15921.699};
-				angles[]={6.279264,0,0.0097534489};
+				position[]={2630.1323,464.02966,15921.699};
+				angles[]={6.2792583,0,0.0097563909};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_7] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " [this, vic_7] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "}";
 			};
 			id=3109;
 			type="Box_NATO_Ammo_F";
-			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29000,7 +28999,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -29012,18 +29011,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2629.9971,464.03592,15923.635};
-				angles[]={6.279264,0,0.0022375863};
+				position[]={2629.9973,464.03595,15923.635};
+				angles[]={6.2792583,0,0.0022340214};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "};" \n "" \n "[this, vic_7] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "[this, vic_7] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "}";
 			};
 			id=3110;
 			type="Box_NATO_Grenades_F";
-			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29041,7 +29039,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -29053,18 +29051,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2635.9971,465.72635,15959.76};
-				angles[]={6.2697334,0,0.029846238};
+				position[]={2635.9976,465.72723,15959.76};
+				angles[]={6.2697287,0,0.029845132};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_8] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n "[this, vic_8] call ace_cargo_fnc_loadItem; " \n "};" \n "" \n "}";
 			};
 			id=3111;
 			type="Box_NATO_Ammo_F";
-			atlOffset=-0.00082397461;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29082,7 +29080,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -29094,18 +29092,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2634.7874,465.66571,15957.939};
-				angles[]={6.2697334,0,0.029846238};
+				position[]={2634.7874,465.6666,15957.939};
+				angles[]={6.2697287,0,0.029845132};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " " \n "};" \n "" \n "[this, vic_8] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""HandGrenade"", 20];  " \n "this addMagazineCargoGlobal [""SmokeShell"", 20];   " \n "this addMagazineCargoGlobal [""SmokeShellPurple"", 4]; " \n "this addMagazineCargoGlobal [""SmokeShellBlue"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellGreen"", 4];  " \n "this addMagazineCargoGlobal [""SmokeShellOrange"", 4];   " \n "this addMagazineCargoGlobal [""SmokeShellRed"", 4]; " \n "this addMagazineCargoGlobal [""rhs_fim92_mag"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HE"", 2];  " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEDP"", 2];   " \n "this addMagazineCargoGlobal [""rhs_mag_maaws_HEAT"", 2]; " \n "this addMagazineCargoGlobal [""rhs_m72a7_mag"", 2];   " \n "this addMagazineCargoGlobal [""1Rnd_SmokeRed_Grenade_shell"", 10]; " \n "this addMagazineCargoGlobal [""1Rnd_Smoke_Grenade_shell"", 4]; " \n "this addMagazineCargoGlobal [""1Rnd_SmokeBlue_Grenade_shell"", 4];   " \n "this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 4];   " \n " [this, vic_8] call ace_cargo_fnc_loadItem;" \n "};" \n "" \n "}";
 			};
 			id=3112;
 			type="Box_NATO_Grenades_F";
-			atlOffset=-0.00085449219;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29123,7 +29121,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -29151,18 +29149,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2633.002,463.96915,15904.634};
-				angles[]={6.2716875,0,0.0052815755};
+				position[]={2633.0015,463.96945,15904.634};
+				angles[]={6.2716837,0,0.0052883476};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_5] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n "[this, vic_5] call ace_cargo_fnc_loadItem; " \n "};" \n "" \n "}";
 			};
 			id=3132;
 			type="Box_NATO_Ammo_F";
-			atlOffset=-0.0013122559;
+			atlOffset=-0.0010070801;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29180,7 +29178,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -29192,17 +29190,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2636.4714,463.59711,15896.859};
-				angles[]={6.1753535,0,0.0052815755};
+				position[]={2636.4714,463.59708,15896.859};
+				angles[]={6.1753588,0,0.0052883476};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n " " \n "};" \n "" \n "[this, vic_6] call ace_cargo_fnc_loadItem;}";
+				init="call{if (isServer) then {  " \n "this addMagazineCargoGlobal [""30Rnd_556x45_Stanag"", 50];  " \n "this addMagazineCargoGlobal [""rhsusf_mag_17Rnd_9x19_JHP"", 20];   " \n "this addMagazineCargoGlobal [""rhs_200rnd_556x45_M_SAW"", 20]; " \n "this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box_Tracer"", 20];  " \n "this addMagazineCargoGlobal [""150Rnd_762x54_Box"", 20];   " \n "this addMagazineCargoGlobal [""rhsusf_20Rnd_762x51_m118_special_Mag"", 20]; " \n "[this, vic_6] call ace_cargo_fnc_loadItem; " \n "};" \n "" \n "}";
 			};
 			id=3133;
 			type="Box_NATO_Ammo_F";
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29220,7 +29219,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -33543,7 +33542,7 @@ class Mission
 			colorName="ColorWEST";
 			a=25;
 			b=175;
-			angle=348.92087;
+			angle=348.92084;
 			id=3431;
 			atlOffset=-0.00021362305;
 		};
@@ -33638,6 +33637,7 @@ class Mission
 				};
 			};
 			id=3435;
+			atlOffset=-0.0016174316;
 		};
 		class Item576
 		{
@@ -33654,6 +33654,7 @@ class Mission
 			};
 			id=3436;
 			type="LOP_IRAN_BTR80";
+			atlOffset=-0.0016174316;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34017,6 +34018,7 @@ class Mission
 			};
 			id=3445;
 			type="LOP_IRAN_KAMAZ_Covered";
+			atlOffset=-0.0021514893;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34057,6 +34059,7 @@ class Mission
 			};
 			id=3448;
 			type="LOP_IRAN_KAMAZ_Covered";
+			atlOffset=-0.010040283;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34096,6 +34099,7 @@ class Mission
 			};
 			id=3450;
 			type="LOP_IRAN_UAZ_DshKM";
+			atlOffset=-0.0090179443;
 		};
 		class Item580
 		{
@@ -35304,6 +35308,7 @@ class Mission
 				};
 			};
 			id=3471;
+			atlOffset=-0.0016174316;
 		};
 		class Item581
 		{
@@ -35498,6 +35503,7 @@ class Mission
 				};
 			};
 			id=3498;
+			atlOffset=-0.0016174316;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35573,6 +35579,7 @@ class Mission
 				};
 			};
 			id=3517;
+			atlOffset=-0.0016174316;
 		};
 		class Item583
 		{
@@ -35625,6 +35632,7 @@ class Mission
 				};
 			};
 			id=3519;
+			atlOffset=-0.0016174316;
 		};
 		class Item584
 		{
@@ -35677,6 +35685,7 @@ class Mission
 				};
 			};
 			id=3521;
+			atlOffset=-0.0016174316;
 		};
 		class Item585
 		{
@@ -35729,6 +35738,7 @@ class Mission
 				};
 			};
 			id=3523;
+			atlOffset=-0.0016174316;
 		};
 		class Item586
 		{
@@ -35816,7 +35826,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5665.2764,303.95593,13437.496};
-				angles[]={-0,0,6.2826972};
+				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
 			flags=4;
